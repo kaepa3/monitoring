@@ -43,6 +43,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+.pytest_cache/
 nosetests.xml
 coverage.xml
 *.cover
@@ -105,4 +106,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# vscode
+.vscode/
 
