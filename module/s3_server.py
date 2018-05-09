@@ -2,9 +2,9 @@
 import boto3
 import toml
 
-class UploadServer(object):
+class S3Server(object):
     def __init__(self, name, *args):
-        super(UploadServer, self).__init__(*args)
+        super(S3Server, self).__init__(*args)
         self.config = toml.load(open(name))
         self.s3 = boto3.client('s3')
         
