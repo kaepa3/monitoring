@@ -111,3 +111,4 @@ venv.bak/
 
 # config
 s3.toml
+test.sh
