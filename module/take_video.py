@@ -7,11 +7,12 @@ class TakeVideo(object):
         self.time = time
 
     def start_recording_with_time(self, file, time):
-        self.camera.start_recording(file)
+        name = file + ".h264"
+        self.camera.start_recording(name)
         self.camera.wait_recording(time)
         self.camera.stop_recording()
 
-    def start_recording(self, time):
-        self.start_recording_with_time(file, self.time)
+    def start_recording(self, file):
+        return self.start_recording_with_time(file, self.time)
 
 
